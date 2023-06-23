@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(214, 207, 224);
+}
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.Cobertura{
+    display: flex;
+    width: 18rem;
+}
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.DatosPer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 18rem;
+}
+textarea{
+    resize: none;
+}
+.obs{
+    width: 18rem;
+    display: flex;
+}

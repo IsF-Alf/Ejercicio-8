@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="./assets/Pages/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a OSdeDA</h1>
+        <p>Obra Social de Desarrolladores</p>
+    </header>
+    <main>
+        <section>
+            <h3>Registro de OSDeDA</h3>
+            <a href="tel:+9703726385">Tel: 9703726385</a>
+            <a href="mailto:algo@gmail.com">algo@gmail.com</a>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52627.497097757405!2d-58.569789573202414!3d-34.47197917735087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1687438335980!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <form action="./assets/Pages/show_data.html" method="get" class="Formulario">
+            <fieldset class="DatosPer">
+                <legend>Datos personales</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="nombre-afiliado" placeholder="Nombre">
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="nombre-afiliado">
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha-nacimiento" id="fecha">
+
+                <label for="Nacionalidad">Seleccione una nacionalidad:</label>
+                <select name="NacionalidadElegida" id="Nacionalidad">
+                    <option value=" ">--selecciona una opcion--</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="España">España</option>
+                    <option value="Italia">Italia</option>
+                </select>
+            </fieldset>
+            <fieldset class="Cobertura">
+                <legend>Cobertura</legend>
+                <div class="InputCob">
+                    <label for="cubre-nutri">Nutricionista</label>
+                    <input type="checkbox" name="cobertura-1" id="cubre-nutri" value="cubre-nutricionista">
+                </div>
+                <div class="InputCob">
+                    <label for="cubre-gym">Gimnasio</label>
+                    <input type="checkbox" name="cobertura-2" id="cubre-gym" value="cubre-gimansio">
+                </div>
+                <div class="InputCob">
+                    <label for="cubre-doc">Doctor</label>
+                    <input type="checkbox" name="cobertura-3" id="cubre-doc" value="cubre-doctor">
+                </div>
+                <div class="InputCob">
+                    <label for="cubre-farm">Farmacia</label>
+                    <input type="checkbox" name="cobertura-4" id="cubre-farm" value="cubre-farmacia">
+                </div>
+            </fieldset>
+            <div class = "Obs">
+            <label for="comentario">Observaciones:</label>
+            <textarea name="comentario-" id="comentario" cols="30" rows="10"></textarea>
+        </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+
+</html>
